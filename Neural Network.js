@@ -35,14 +35,14 @@ let processImg = function (image) {
 		  console.log(imageType);
 		  console.log();
 		  break;
-	}
-}
+	};
+};
 
 let processWord = function(lang) {
-	let word = Math.round(Math.random * 2)
+	let word = Math.round(Math.random * 5);
 	let animals = {
 		species: animal,
-		animalType: 
+		animalType: deer,
 	};
 	let householdItems = {
 		cleaningSupplies: bleach,
@@ -50,5 +50,25 @@ let processWord = function(lang) {
 	};
 	
 	switch (word) {
-		
+		case word == 0:
+		  document.write(animals.species + householdItems.cleaningSupplies);
+		  console.log();
+		  break;
+		case word == 1:
+		  document.write(animals.animalType + housholdItems.cleaningSupplies2);
+		  console.log();
+		  break;
+		case word == 2:
+		  document.write();
+		  console.log();
+		  break;
+		 case word == 3:
+		   document.write();
+		   console.log();
+		   break;
+		 case word == 4: 
+		   document.write();
+		   console.log();
+		  
 	};
+}
